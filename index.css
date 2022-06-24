@@ -1,0 +1,42 @@
+/* Copyright (c) 2022 Ivan Teplov */
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+    margin: 2rem;
+}
+
+.parameter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+
+    /* In order to show the current value of an input */
+    padding-right: calc(0.5rem + 6ch);
+
+    gap: 1rem;
+}
+
+input[type="range"] {
+    position: relative;
+}
+
+input[type="range"]::after {
+    content: attr(value);
+    position: absolute;
+    left: calc(100% + 2ch);
+    top: 0;
+    bottom: 0;
+    vertical-align: middle;
+}
+
