@@ -55,8 +55,8 @@ const draw = () => {
     // Close the superellise's path
     context.closePath()
 
-    // Fill the path with lightgray color
-    context.fillStyle = "lightgray"
+    // Fill the path with a color that's set in CSS
+    context.fillStyle = "cornflowerblue"
     context.fill()
 
     // Restore canvas context's default state
